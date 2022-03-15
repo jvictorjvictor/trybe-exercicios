@@ -5,7 +5,7 @@ function numberVerifier (numbers) {
     let biggestNumber = 0
 
     for (i = 0; i < numbers.length; i += 1){
-        if (numbers[biggestNumber] < numbers[i]) {
+        if (biggestNumber < numbers[i]) {
             biggestNumber = i
         }
     }

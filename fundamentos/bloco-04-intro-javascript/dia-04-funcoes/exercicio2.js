@@ -19,6 +19,8 @@ leitor.livrosFavoritos.push(
     },
 );
 
+console.log(leitor)
+
 /* console.log(leitor.nome, 'tem', leitor.livrosFavoritos.length, 'livros favoritos.')  //exercício 3 */
 
 /* console.log(leitor)  //exercício 2 */
