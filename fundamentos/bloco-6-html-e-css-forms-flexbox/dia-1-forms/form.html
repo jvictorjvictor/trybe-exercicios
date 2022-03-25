@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrybeTrip - Chance de Ouro</title>
+</head>
+
+<body>
+    <header id="cabeçalho">
+        <h1>Header da página</h1>
+    </header>
+    <fieldset>
+        <form method="get">
+            <label id="name">Nome:
+                <input type="text" name="name" id="name">
+            </label>
+            <br>
+            <br>
+            <label id="email">Email:
+                <input type="text" name="email" id="email">
+            </label>
+            <br>
+            <br>
+            <br>
+            <section id="travel-options"><strong>Destino Preferido: </strong>
+                <input type="radio" id="city" name="options">
+                <label for="city">Cidade</label>
+                <input type="radio" id="florest" name="options">
+                <label for="florest">Campo</label>
+                <input type="radio" id="beach" name="options">
+                <label for="beach">Praia</label>
+                <input type="radio" id="hills" name="options">
+                <label for="hills">Montanha</label>
+            </section>
+            <br>
+            <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
+            <div id="creative-answer">
+                <textarea id="answer" name="answer" rows="5" cols="50" placeholder="Escreva sua resposta aqui" maxlength="500"></textarea>
+            </div>
+            <p>Qual a melhor data para realizar a sua viagem?</p>
+            <input type="date">
+            <br>
+            <br>
+            <label for="term1">
+                Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+                <input type="checkbox">
+            </label>
+            <br>
+            <label for="term2">
+                Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+                <input type="checkbox" required>
+            </label>
+            <br>
+            <br>
+            <button type="submit" id="send-info">Enviar informações</button>
+            <input type="reset">
+        </form>
+    </fieldset>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
