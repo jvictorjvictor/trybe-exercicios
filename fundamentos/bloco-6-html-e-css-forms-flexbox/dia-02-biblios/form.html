@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrybeTrip - Chance de Ouro</title>
+    <link rel="stylesheet" href="/bootstrap-5.1.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+</head>
+
+<body>
+    <header id="cabeçalho">
+        <h1>
+            TrybeTrip -
+            <small class="text-muted">Formulário</small>
+        </h1>
+    </header>
+    <br>
+    <hr>
+    <br>
+    <form method="get">
+        <div class="input-group flex-nowrap container">
+            <span class="input-group-text" id="addon-wrapping">Nome: </span>
+            <input type="text" class="form-control" placeholder="Digite seu nome" aria-label="Username"
+                aria-describedby="addon-wrapping">
+        </div>
+        <br>
+        <br>
+        <div class="input-group flex-nowrap container">
+            <span class="input-group-text" id="addon-wrapping">Email: </span>
+            <input type="text" class="form-control" placeholder="Digite seu Email" aria-label="Username"
+                aria-describedby="addon-wrapping">
+        </div>
+        <br>
+        <br>
+        <br>
+        <section id="travel-options" class="container"><strong>Destino Preferido: </strong>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Cidade
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                <label class="form-check-label" for="flexRadioDefault2">
+                    Campo
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                <label class="form-check-label" for="flexRadioDefault3">
+                    Praia
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+                <label class="form-check-label" for="flexRadioDefault4">
+                    Montanha
+                </label>
+            </div>
+        </section>
+        <br>
+        <p class="container">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
+        <div id="creative-answer" class="container">
+            <textarea id="answer" name="answer" rows="5" cols="50" placeholder="Escreva sua resposta aqui"
+                maxlength="500"></textarea>
+        </div>
+        <p class="container">Qual a melhor data para realizar a sua viagem?</p>
+        <div class="container">
+            <input type="text" id="datepicker">
+        </div>
+        <br>
+        <br>
+        <div class="container">
+            <label for="term1">
+                Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+                <input type="checkbox">
+            </label>
+            <br>
+            <label for="term2">
+                Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+                <input type="checkbox" required>
+            </label>
+        </div>
+        <br>
+        <br>
+        <div class="container">
+        <button type="submit" id="send-info">Enviar informações</button>
+        <input type="reset">
+        </div>
+    </form>
+
+    <script src="script.js"></script>
+    <script src="pikaday.js"></script>
+<script>
+    let picker = new Pikaday({
+        field: $('#datepicker')[0],
+        format: 'DD MM YYYY',
+        onSelect: function() {
+            console.log(this.getMoment().format('DD MM YYYY'));
+        }
+    })
+</script>
+</body>
+
+</html>
