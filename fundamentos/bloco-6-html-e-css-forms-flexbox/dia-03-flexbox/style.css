@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu';
+}
+
+.header-group {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(51, 51, 51);
+  align-items: center;
+}
+
+.header-group h1 {
+  color: white;
+}
+
+.header-link h3 {
+  color: gray;
+  text-decoration: underline;
+}
+
+.header-link {
+  display: flex;
+  align-items: center;
+}
+
+.subtitle-text {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.main-techs {
+  display: flex;
+  justify-content: center;
+}
+
+.secondary-techs {
+  display: flex;
+  justify-content: center;
+  margin-right: 6px;
+}
+
+.html {
+  background-color: rgb(231, 230, 230);
+  border-radius: 10%;
+  box-shadow: 2px 2px 2px rgb(128, 127, 127);
+}
+
+.html h5 {
+  display: flex;
+  justify-content: center;
+}
+
+.css {
+  background-color: rgb(231, 230, 230);
+  border-radius: 10%;
+  margin-left: 7px;
+  box-shadow: 2px 2px 2px rgb(128, 127, 127);
+}
+
+.css h5 {
+  display: flex;
+  justify-content: center;
+}
+
+.js {
+  background-color: rgb(231, 230, 230);
+  border-radius: 10%;
+  margin-left: 7px;
+  box-shadow: 2px 2px 2px rgb(128, 127, 127);
+}
+
+.js h5 {
+  display: flex;
+  justify-content: center;
+}
+
+.react {
+  background-color: rgb(231, 230, 230);
+  border-radius: 10%;
+  margin-left: 7px;
+  margin-top: 7px;
+  box-shadow: 2px 2px 2px rgb(128, 127, 127);
+}
+
+.react h5 {
+  display: flex;
+  justify-content: center;
+}
+
+.rtl {
+  background-color: rgb(231, 230, 230);
+  border-radius: 10%;
+  margin-left: 7px;
+  margin-top: 7px;
+  box-shadow: 2px 2px 2px rgb(128, 127, 127);
+}
+
+.rtl h5 {
+  display: flex;
+  justify-content: center;
+}
+
+.redux {
+  background-color: rgb(231, 230, 230);
+  border-radius: 10%;
+  margin-left: 7px;
+  margin-top: 7px;
+  box-shadow: 2px 2px 2px rgb(128, 127, 127);
+}
+
+.redux h5 {
+  display: flex;
+  justify-content: center;
+}
+
+.contacts {
+  display: flex;
+  justify-content: center;
+}
+
+.header-img {
+  width: 70px;
+}
+
+.gallery-img {
+  width: 150px;
+}
+
+.social-img {
+  width: 25px;
+  margin-left: 10px;
+}
